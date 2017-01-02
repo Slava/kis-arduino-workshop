@@ -1,5 +1,4 @@
-
-#Arduino Basics
+# Arduino Basics
 
 Today we'll be taking an in-depth look at Arduino's, and what they're capable of. In short, we can use Arduinos to control circuits with code, allowing us to add complex logic to our circuits. We've already seen a couple of demos of what we can do.
 
@@ -194,4 +193,10 @@ To get you guys familiar with coding, we have a couple of excercises for you all
 
 ## Exercises
 
+- [Challenge 1](./cpp_shell/challenge1.html)
+- [Challenge 2](./cpp_shell/challenge2.html)
+- [Challenge 3](./cpp_shell/challenge3.html)
 
+### Extra Credit Challenge
+
+- [Challenge 4](./cpp_shell/challenge4.html)
