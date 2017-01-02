@@ -13,7 +13,9 @@ We also want to be able to control voltage values in our circuits. Arduino allow
 
 ## Basic Code Syntax
 
-Okay, so we've seen what is possible with Arduino's. Now we'll take a look at how to code programs for Arduino. Arduino uses a progamming language similar to C++. It is useful to have a code editor open so you can copy and paste examples and play around with them:
+Some of you might be familiar with coding Arduinos, in that case give this section a quick review and go straight to exercises.
+
+Now we'll take a look at how to code programs for Arduino. Arduino uses a progamming language similar to C++. It is useful to have a code editor open so you can copy and paste examples and play around with them:
 [Online Code Editor](cpp_shell/cpp_shell.html)  
 
 Use "print" and "println" to print things. Copy and paste this example:
@@ -100,12 +102,14 @@ a == 5; // true
 ```
 
 Or if things are not equal:
+
 ```c++
 int a = 5;
 a != 5; // false
 ```
 
 We can even put two tests together:
+
 ```c++
 int a = 5;
 int b = 8;
@@ -128,10 +132,45 @@ if (a > 9){
 In thse above code, only the second "print" is executed, since it fails the test.
 
 ### While Loops
-**TODO**
+
+It is useful to know what loops are but they are not going to be required for the project. Loops allow us to iterate and do some action multiple times.
+
+Here is a classic example of the "times 3 plus 1" code. Start with some number, if it is even, divide it by 2, otherwise multiply it by 3 and add 1.
+
+```c++
+int a = 53;
+while (a > 1) {
+  // even?
+  if (a % 2 == 0) {
+    a = a / 2;
+  }
+  // odd?
+  else {
+    a = a * 3 + 1;
+  }
+}
+```
 
 ### For Loops
-**TODO**
+For loops are useful to count-up or cound-down. Here is an example that prints all numbers between 1 and 8, not including 8:
+
+```c++
+for (int i = 1; i < 8; i++) {
+    println(i);
+}
+```
+
+You can also nest the loops. For example, here is a code that prints a triangle of stars:
+
+
+```c++
+for (int i = 0; i < 5; i++) {
+    for (int j = 0; j <= i; j++) {
+      print(" *");
+    }
+    println("\n");
+}
+```
 
 ### Arduino Code Layout
 
@@ -152,3 +191,7 @@ void loop() {
 In this code, __setup__ and __loop__ are **functions**. In Arduino, __setup__ and __loop__ are special functions. __setup__ is run once, and __loop__ is run over and over again until power is removed.
 
 To get you guys familiar with coding, we have a couple of excercises for you all to try. 
+
+## Exercises
+
+
