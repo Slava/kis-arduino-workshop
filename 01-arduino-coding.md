@@ -193,9 +193,13 @@ To get you guys familiar with coding, we have a couple of excercises for you all
 
 ## Exercises
 
+In each exercise you have the main function that runs all the tests and the function on the bottom that you need to implement. After you write your code, test it by running the code with the "Run" button on the top.
+
 - [Challenge 1](./cpp_shell/challenge1.html)
 - [Challenge 2](./cpp_shell/challenge2.html)
 - [Challenge 3](./cpp_shell/challenge3.html)
+
+Once completed, show the results to Slava or Edward.
 
 ### Extra Credit Challenge
 
