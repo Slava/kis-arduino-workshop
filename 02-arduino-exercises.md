@@ -25,4 +25,35 @@ Let Slava and Edward know when you are done, or if you need help.
 
 ## Step 2
 
-TODO
+Next we will actually code up the Arduino. The following text is the tutorial of a blinking light circuit driven by Arduino.
+
+See the picture below, use your Arduino's pin 13 as a power source (instead of the 5V pin). Use the wires and the breadboard to connect the components, first.
+
+![](./images/ExampleCircuit_bb.png)
+
+To write and upload code to Arduino, use the __Arduino IDE app__ that we asked you to install in the beginning of today's workshop. Once you are ready to upload the code, you can use the buttons on the top panel to verify and then upload the code. Make sure your Arduino is always connected to the laptop over USB cable.
+
+For the code, we will use the `LED_BUILTIN` constant to refer to pin 13.
+
+The first thing you do is to initialize `LED_BUILTIN` pin as an output pin with the line
+
+```
+pinMode(LED_BUILTIN, OUTPUT);
+```
+
+In the main loop, you turn the LED on with the line:
+
+```
+digitalWrite(LED_BUILTIN, HIGH);
+```
+
+This supplies 5 volts to the LED anode. That creates a voltage difference across the pins of the LED, and lights it up. Then you turn it off with the line:
+
+```
+digitalWrite(LED_BUILTIN, LOW);
+```
+
+That takes the `LED_BUILTIN` pin back to 0 volts, and turns the LED off. In between the on and the off, you want enough time for a person to see the change, so the `delay()` commands tell the board to do nothing for 1000 milliseconds, or one second. When you use the `delay()` command, nothing else happens for that amount of time.
+
+Verify and upload your code to the Arduino and if everything works, show Edward or Slava your results. If you are stuck and need help, ask for help.
+
