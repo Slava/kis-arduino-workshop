@@ -15,7 +15,9 @@ We also want to be able to control voltage values in our circuits. Arduino allow
 Some of you might be familiar with coding Arduinos, in that case give this section a quick review and go straight to exercises.
 
 Now we'll take a look at how to code programs for Arduino. Arduino uses a progamming language similar to C++. It is useful to have a code editor open so you can copy and paste examples and play around with them:
-[Online Code Editor](./cpp_shell/cpp_shell.html)  
+[Online Code Editor](./cpp_shell/cpp_shell.html)
+
+In the Online Code Editor, always write your code in the function body on the bottom, everything above is a setup.
 
 Use "print" and "println" to print things. Copy and paste this example:
 
@@ -70,7 +72,7 @@ a = a + 4 // a is 3 + 4 = 7
 Functions are pieces of code you can run wherever. With a function, you pass in data, and the function returns data. This function computes the square of a number:
 
 ```c++
-int square(int i){
+int square(int i) {
     return i*i;
 }
 
@@ -81,7 +83,7 @@ square(3); // 9
 ```
 
 Let's break the above code down:  
-To declare a function, we must say what type it will return. In this case, we're returning an integer (the square of a number), so we use the **int** type. After that, we give a name to our function (in the example, it is "square"). Next, we need to let the function know what we will pass in. In this case, we're just passing in some integer i. We call these **parameters**. These go in parentheses. Next, we move onto the actual code of the function. This goes in curly braces {}. In this example, we only have one line, i*i, which we then return. Now we can call square(i) whenever we want the square of a number.
+To declare a function, we must say what type it will return. In this case, we're returning an integer (the square of a number), so we use the **int** type. After that, we give a name to our function (in the example, it is "square"). Next, we need to let the function know what we will pass in. In this case, we're just passing in some integer i. We call these **parameters**. These go in parentheses. Next, we move onto the actual code of the function. This goes in curly braces {}. In this example, we only have one line, `i*i`, which we then return. Now we can call `square(i)` whenever we want the square of a number.
 
 ### If Statements
 
@@ -134,6 +136,16 @@ In thse above code, only the second "print" is executed, since it fails the test
 
 It is useful to know what loops are but they are not going to be required for the project. Loops allow us to iterate and do some action multiple times.
 
+Here is a simple example where we would count down from 10 to 1:
+
+```c++
+int count = 10;
+while (count > 0) {
+    println(count);
+    count = count - 1;
+}
+```
+
 Here is a classic example of the "times 3 plus 1" code. Start with some number, if it is even, divide it by 2, otherwise multiply it by 3 and add 1.
 
 ```c++
@@ -154,7 +166,7 @@ while (a > 1) {
 For loops are useful to count-up or cound-down. Here is an example that prints all numbers between 1 and 8, not including 8:
 
 ```c++
-for (int i = 1; i < 8; i++) {
+for (int i = 1; i < 8; i = i + 1) {
     println(i);
 }
 ```
@@ -163,8 +175,8 @@ You can also nest the loops. For example, here is a code that prints a triangle 
 
 
 ```c++
-for (int i = 0; i < 5; i++) {
-    for (int j = 0; j <= i; j++) {
+for (int i = 0; i < 5; i = i + 1) {
+    for (int j = 0; j <= i; j = j + 1) {
       print(" *");
     }
     println("\n");
@@ -195,8 +207,8 @@ To get you guys familiar with coding, we have a couple of excercises for you all
 
 In each exercise you have the main function that runs all the tests and the function on the bottom that you need to implement. After you write your code, test it by running the code with the "Run" button on the top.
 
-- [Challenge 1](./cpp_shell/challenge1.html)
-- [Challenge 2](./cpp_shell/challenge2.html)
+- [Challenge 1](./cpp_shell/challenge1.html) (needs understanding of functions)
+- [Challenge 2](./cpp_shell/challenge2.html) (needs understanding of loops)
 - [Challenge 3](./cpp_shell/challenge3.html)
 
 Once completed, show the results to Slava or Edward.
