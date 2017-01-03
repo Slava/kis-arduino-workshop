@@ -16,8 +16,7 @@ Some things to note:
 
 - The LED has two legs. The shorter leg is the "negative leg" and connects to GND (ground)
 - The longer leg of LED connects to a resistor
-- There are many different transistors, pick the 220 Ohm one. LED would work with a resistor up to 1K Ohm too.
-- Pick anything that has stripes: red, red, brown, gold.
+- There are many different resistors, pick the 330 Ohm or higher. LED would work with a resistor up to 3K Ohm too, but it won't be as bright.
 
 ![](./images/poweredled.jpg)
 
