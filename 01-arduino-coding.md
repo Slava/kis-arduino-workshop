@@ -209,10 +209,10 @@ In each exercise you have the main function that runs all the tests and the func
 
 - [Challenge 1](./cpp_shell/challenge1.html) (needs understanding of functions)
 - [Challenge 2](./cpp_shell/challenge2.html) (needs understanding of loops)
-- [Challenge 3](./cpp_shell/challenge3.html)
+- [Challenge 3](./cpp_shell/fibbochallenge.html) (needs understanding of loops)
 
 Once completed, show the results to Slava or Edward.
 
 ### Extra Credit Challenge
 
-- [Challenge 4](./cpp_shell/challenge4.html)
+- [Challenge 4](./cpp_shell/challenge4.html) (loops and conditionals)
