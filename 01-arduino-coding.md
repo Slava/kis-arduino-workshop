@@ -15,7 +15,7 @@ We also want to be able to control voltage values in our circuits. Arduino allow
 Some of you might be familiar with coding Arduinos, in that case give this section a quick review and go straight to exercises.
 
 Now we'll take a look at how to code programs for Arduino. Arduino uses a progamming language similar to C++. It is useful to have a code editor open so you can copy and paste examples and play around with them:
-[Online Code Editor](cpp_shell/cpp_shell.html)  
+[Online Code Editor](./cpp_shell/cpp_shell.html)  
 
 Use "print" and "println" to print things. Copy and paste this example:
 
