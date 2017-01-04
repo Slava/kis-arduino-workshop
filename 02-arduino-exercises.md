@@ -56,3 +56,39 @@ That takes the `LED_BUILTIN` pin back to 0 volts, and turns the LED off. In betw
 
 Verify and upload your code to the Arduino and if everything works, show Edward or Slava your results. If you are stuck and need help, ask for help.
 
+## Step 3
+
+In this step we will make a remote-controlled light. We have a bluetooth module that you will connect to your board a code snippet that you will upload to your Arduino.
+
+![](./images/led.gif)
+
+Follow this diagram to construct your Arduino circuit.
+
+![](./images/bluetooth.jpg)
+
+And upload the following code to your Arduino:
+
+```c++
+char data = 0; //Variable for storing received data
+void setup()
+{
+    Serial.begin(9600); //Sets the baud for serial data transmission                               
+    pinMode(13, OUTPUT); //Sets digital pin 13 as output pin
+}
+void loop()
+{
+   if(Serial.available() > 0)  // Send data only when you receive data:
+   {
+      data = Serial.read();        //Read the  incoming  data and store it into variable data
+      Serial.print(data);          //Print Value inside data in Serial monitor
+      Serial.print("\n");          //New line
+      if(data == '1')              // Checks whether value of data is equal to 1
+         digitalWrite(13, HIGH);   //If value is 1 then LED turns ON
+      else if(data == '0')         //  Checks  whether value of data is equal to 0
+         digitalWrite(13, LOW);    //If value is 0 then LED turns OFF
+   }
+}
+```
+
+Once done, you can use your Android phone with the following app to control the light remotely: [link](https://dl.dropboxusercontent.com/u/13403973/BlueArd.apk)
+
