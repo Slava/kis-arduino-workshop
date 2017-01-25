@@ -1,6 +1,6 @@
 # Learn Arduino
 
-- [Preparation](./00-installation)
-- [Coding Basics](./01-arduino-coding)
-- [Arduino Exercises](./02-arduino-exercises)
-- [Building RC Boat](./03-rc-boat)
+- [Preparation](./00-installation.md)
+- [Coding Basics](./01-arduino-coding.md)
+- [Arduino Exercises](./02-arduino-exercises.md)
+- [Building RC Boat](./03-rc-boat.md)
